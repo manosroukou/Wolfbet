@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.ergasiaui.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_home_to_filter"
+            app:destination="@id/filterFragment" />
+
+        <action
+            android:id="@+id/action_home_to_game"
+            app:destination="@+id/gameFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/filterFragment"
+        android:name="com.example.ergasiaui.FilterFragment"
+        android:label="Filter"
+        tools:layout="@layout/fragment_filter" >
+    <action
+        android:id="@+id/action_filter_to_game"
+        app:destination="@id/gameFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.example.ergasiaui.GameFragment"
+        android:label="Game"
+        tools:layout="@layout/fragment_game" />
+
+</navigation>

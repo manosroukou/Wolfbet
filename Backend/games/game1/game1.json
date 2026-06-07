@@ -1,0 +1,11 @@
+{
+  "GameName": "LuckySpin",
+  "ProviderName": "NovaGames",
+  "Stars": 0,
+  "NoOfVotes": 0,
+  "GameLogo": "/games/game1/game1.png",
+  "MinBet": 0.1,
+  "MaxBet": 5,
+  "RiskLevel": "low",
+  "HashKey": "s3cr3t_luckyspin_key_001"
+}

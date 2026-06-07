@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A1A2E"
+    android:fillViewport="true">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Game View -->
+            <FrameLayout
+                android:id="@+id/flGameContainer"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Game Info -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="24dp">
+
+                <TextView
+                    android:id="@+id/tvGameName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvGameCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#B0B0B0"
+                    android:textSize="16sp"
+                    android:layout_marginTop="4dp" />
+
+                <TextView
+                    android:id="@+id/tvGameMinBet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFD700"
+                    android:textSize="15sp"
+                    android:layout_marginTop="4dp" />
+
+                <TextView
+                    android:id="@+id/tvGameVotes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#B0B0B0"
+                    android:textSize="15sp"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+
+            <!-- Bet Input + Multipliers -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp">
+
+                <EditText
+                    android:id="@+id/etBetAmount"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:inputType="numberDecimal"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#666666"
+                    android:background="@drawable/bg_edit_text"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btnHalf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="8dp"
+                    android:text="1/2"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#2A3A5C"
+                    android:minWidth="48dp" />
+
+                <Button
+                    android:id="@+id/btnDouble"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="8dp"
+                    android:text="x2"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#2A3A5C"
+                    android:minWidth="48dp" />
+
+                <Button
+                    android:id="@+id/btnFive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="8dp"
+                    android:text="x5"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#2A3A5C"
+                    android:minWidth="48dp" />
+
+                <Button
+                    android:id="@+id/btnAllIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="8dp"
+                    android:text="ALL IN"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:backgroundTint="#B71C1C"
+                    android:minWidth="48dp" />
+            </LinearLayout>
+
+            <!-- Play Button -->
+            <Button
+                android:id="@+id/btnPlay"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="PLAY"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:backgroundTint="#4CAF50" />
+
+            <!-- Rating Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="24dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rate this game"
+                    android:textColor="#B0B0B0"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="8dp" />
+
+                <LinearLayout
+                    android:id="@+id/llStars"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/star1"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:src="@android:drawable/btn_star_big_off"
+                        android:layout_marginEnd="4dp"
+                        android:clickable="true"
+                        android:focusable="true" />
+
+                    <ImageView
+                        android:id="@+id/star2"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:src="@android:drawable/btn_star_big_off"
+                        android:layout_marginEnd="4dp"
+                        android:clickable="true"
+                        android:focusable="true" />
+
+                    <ImageView
+                        android:id="@+id/star3"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:src="@android:drawable/btn_star_big_off"
+                        android:layout_marginEnd="4dp"
+                        android:clickable="true"
+                        android:focusable="true" />
+
+                    <ImageView
+                        android:id="@+id/star4"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:src="@android:drawable/btn_star_big_off"
+                        android:layout_marginEnd="4dp"
+                        android:clickable="true"
+                        android:focusable="true" />
+
+                    <ImageView
+                        android:id="@+id/star5"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:src="@android:drawable/btn_star_big_off"
+                        android:clickable="true"
+                        android:focusable="true" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnSubmitRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:text="Submit Rating"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#FFD700"
+                    android:layout_marginTop="12dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Notification overlay -->
+        <TextView
+            android:id="@+id/tvNotification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="12dp"
+            android:elevation="4dp"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+</ScrollView>

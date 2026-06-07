@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ErgasiaUI</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="info_dragon_fortune">Slot machine με 3 τροχούς και ζωάκια!\n\n🎰 3 ίδια ζωάκια → JACKPOT x40\n🐉 2 δράκοι + 1 άλλο → x6.5\n🦁 2 λιοντάρια + 1 άλλο → x2\n🦁 1 λιοντάρι + 2 διαφορετικά → Break Even x1\n❌ 3 διαφορετικά → Loss</string>
+
+    <string name="info_fruit_paradise">Slot machine με 3 τροχούς και φρούτα!\n\n🎰 3 ίδια φρούτα → JACKPOT x20\n🍒 2 κεράσια + 1 άλλο → x3.5\n🍌 2 μπανάνες + 1 άλλο → x2.5\n🍅 2 ντομάτες + 1 άλλο → x1.5\n🍒 1 κεράσι + 2 διαφορετικά → Break Even x1\n🍌 1 μπανάνα + 2 διαφορετικά → Partial Loss x0.5\n❌ 3 διαφορετικά → Loss</string>
+
+    <string name="info_plinko_prince">Ρίξε τη μπάλα και δες σε ποιο bucket θα πέσει!\n\n🪣 12 buckets με multipliers:\n🏆 x20 (JACKPOT) → στα δύο άκρα\n✅ x3.5, x2.5, x1.5 → Win\n⚖️ x1 → Break Even\n📉 x0.5 → Partial Loss\n❌ x0 → Loss </string>
+
+    <string name="info_lucky_spin">Γύρισε τον τροχό και δες πού θα σταματήσει!\n\n🎡 11 segments:\n🏆 x10 → JACKPOT\n✅ x2.5, x2.0, x1.3, x1.1 → Win\n⚖️ x1.0 → Break Even\n📉 x0.5, x0.1 → Partial Loss\n❌ x0 (3 segments) → Loss</string>
+
+    <string name="info_pirate_treasure">Γύρισε τον τροχό και κυνήγησε τον θησαυρό!\n\n🏴‍☠️ 11 segments:\n💰 x40 → JACKPOT\n✅ x6.5, x2.0 → Win\n⚖️ x1.0 → Break Even\n❌ x0 (7 segments) → Loss</string>
+</resources>

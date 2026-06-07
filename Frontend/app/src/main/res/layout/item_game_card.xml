@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="200dp"
+    android:layout_height="280dp"
+    android:layout_marginEnd="14dp"
+    app:cardCornerRadius="14dp"
+    app:cardBackgroundColor="#1F2940"
+    app:cardElevation="0dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivGameBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher"
+            android:contentDescription="Game background" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_card_gradient" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvGameTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BLACKJACK"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:id="@+id/tvBetCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Classic"
+                android:textColor="#B0B0B0"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/tvMinBet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Min bet: €5.00"
+                android:textColor="#FFD700"
+                android:textSize="13sp"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/tvVotes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1,240 votes"
+                android:textColor="#B0B0B0"
+                android:textSize="13sp"
+                android:layout_marginTop="4dp" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>

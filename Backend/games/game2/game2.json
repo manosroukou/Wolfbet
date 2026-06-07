@@ -1,0 +1,11 @@
+{
+  "GameName": "DragonFortune",
+  "ProviderName": "GoldenBet",
+  "Stars": 0,
+  "NoOfVotes": 0,
+  "GameLogo": "/games/game2/game2.png",
+  "MinBet": 5,
+  "MaxBet": 50,
+  "RiskLevel": "high",
+  "HashKey": "dr4g0n_f0rtune_secret_key_002"
+}
