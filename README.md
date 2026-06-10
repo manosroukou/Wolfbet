@@ -6,6 +6,17 @@
 
 ---
 
+## Screenshots
+ 
+<p align="center">
+  <img src="screenshots/home.png" alt="Home Screen" width="250"/>
+  &nbsp;&nbsp;
+  <img src="screenshots/fruit-paradise.png" alt="Fruit Paradise" width="250"/>
+  &nbsp;&nbsp;
+  <img src="screenshots/plinko.png" alt="Plinko Prince" width="250"/>
+</p>
+---
+
 ## Overview
 
 WolfBet is a distributed online casino application developed as part of the Distributed Systems course. The system consists of a **Java backend** implementing a scalable Master-Worker architecture and an **Android frontend** offering six fully animated casino games. The platform supports concurrent players, parallel bet processing, fault-tolerant game hosting, and real-time result aggregation.
